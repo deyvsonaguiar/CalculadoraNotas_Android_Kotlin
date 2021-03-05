@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/nota1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="80dp"
         android:background="@android:color/darker_gray"
         android:ems="10"
         android:hint="Nota 1"
@@ -22,10 +23,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/nota2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="8dp"
         android:background="@android:color/darker_gray"
         android:ems="10"
         android:hint="Nota 2"
@@ -34,35 +35,48 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/nota1"
+        tools:ignore="NotSibling" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/faltas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="8dp"
         android:background="@android:color/darker_gray"
         android:ems="10"
         android:hint="Faltas"
         android:inputType="textPersonName"
         android:padding="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/nota2" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/calcular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="4dp"
         android:padding="20dp"
-        android:text="CALCULAR"
+        android:text="@string/calcular"
         android:textColor="@color/black"
         app:backgroundTint="#D6D3D3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+        app:layout_constraintTop_toBottomOf="@+id/faltas" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calcular"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 <!-- 05/03/2021 TODO OK: 1 - Apagando editText -->
@@ -73,6 +87,10 @@
 <!-- 05/03/2021 TODO OK:  6 - Adicione uma padding de 20dp no plain Text -->
 <!-- 05/03/2021 TODO OK:  7 - Copie o código do editText e crie mais dois campo e renomei o hint para Nota 2 e Faltas respectivamente e renomei o id-->
 <!-- 05/03/2021 TODO OK:  8 - Alinhe o constrant layout amarrando os elementos conforme hierarquia -->
-<!-- 05/03/2021 TODO: 9 - Crie um button e ligue o constraint layout no elemento anterior, altere o background para gray-->
-<!-- 05/03/2021 TODO:  10 - Mude o tamanho do button para preencher todo espaço horizontal em attributes/layout_width/match_parent -->
-<!-- 05/03/2021 TODO:  11 - Altere a cor do texto do button para black -->
+<!-- 05/03/2021 TODO OK: 9 - Crie um button e ligue o constraint layout no elemento anterior, altere o background para gray-->
+<!-- 05/03/2021 TODO OK:  10 - Mude o tamanho do button para preencher todo espaço horizontal em attributes/layout_width/match_parent -->
+<!-- 05/03/2021 TODO OK:  11 - Altere a cor do texto do button para black -->
+<!-- 05/03/2021 TODO OK:  12 - Apague todas as layout_marginTop dos elementos -->
+<!-- 05/03/2021 TODO OK: 14 -  Altere o seu arquivo de string calcular -->
+<!-- 05/03/2021 TODO OK:  15 - Crie um textView-->
+<!-- 05/03/2021 TODO OK:  16 - Renomei os campos do tipo id-->

@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    /* 05/03/2021 TODO:  17 - Chamar e sincronizar o plugin kotlin-android-extensions, responsável por instanciar melhor os componentes no MainAcitivity */
+    id 'kotlin-android-extensions'
 }
 
 android {
