@@ -50,6 +50,19 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:padding="20dp"
+        android:text="CALCULAR"
+        android:textColor="@color/black"
+        app:backgroundTint="#D6D3D3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 <!-- 05/03/2021 TODO OK: 1 - Apagando editText -->
@@ -59,4 +72,7 @@
 <!-- 05/03/2021 TODO OK:  5 - Mude o fundo para cinze em attributes / background -->
 <!-- 05/03/2021 TODO OK:  6 - Adicione uma padding de 20dp no plain Text -->
 <!-- 05/03/2021 TODO OK:  7 - Copie o código do editText e crie mais dois campo e renomei o hint para Nota 2 e Faltas respectivamente e renomei o id-->
-<!-- 05/03/2021 TODO:  8 - Alinhe o constrant layout amarrando os elementos conforme hierarquia -->
+<!-- 05/03/2021 TODO OK:  8 - Alinhe o constrant layout amarrando os elementos conforme hierarquia -->
+<!-- 05/03/2021 TODO: 9 - Crie um button e ligue o constraint layout no elemento anterior, altere o background para gray-->
+<!-- 05/03/2021 TODO:  10 - Mude o tamanho do button para preencher todo espaço horizontal em attributes/layout_width/match_parent -->
+<!-- 05/03/2021 TODO:  11 - Altere a cor do texto do button para black -->
