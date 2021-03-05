@@ -1,5 +1,6 @@
 package com.example.calculadoradenotas
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
@@ -24,8 +25,11 @@ class MainActivity : AppCompatActivity() {
             /* 05/03/2021 TODO:  22 - se o aluno nota <= 6 ou faltas > 10 = reprovado / criar estrutura de condição e retornar resultado de texto*/
             if (media >=6 && faltas <=10) {
                 resultado.setText("Aluno aprovado!" + "\n" + "Nota final: " + media + "\n" + "Faltas: " + faltas)
+                /* 05/03/2021 TODO:  23 - alterando a cor do texto de acordo com o resultado */
+                resultado.setTextColor(Color.GREEN)
             }else {
                 resultado.setText("Aluno reprovado!" + "\n" + "Nota final: " + media + "\n" + "Faltas: " + faltas)
+                resultado.setTextColor(Color.RED)
             }
         }
     }
